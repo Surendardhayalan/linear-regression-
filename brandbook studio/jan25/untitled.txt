@@ -1,0 +1,42 @@
+Grid search :\ hyperparameter tuning - values control the learning process
+find score with the help of cross valitation
+
+adjust the parameter
+-learning rate
+number of epochs
+n_estimators
+
+grid :
+find every combination and find high value chosee
+- load model
+-give parameters like kernal and c
+-gridsearch(model,parameters,cv=5)
+-classifier.fit(x,y)
+classifier.cv_results_
+best_parameter = classfier.best_params_
+print(best_paramter)
+
+it will print highest accurcy value.
+
+1.import lib
+2. load data set
+3. split then into train and test set
+4.  load base model for regression - xgboost
+
+5.define hyperparameter values
+definr name then 
+n_estimators = (100,200,300)
+....
+...\
+..
+6. import grid search
+load model
+scoring('r2" , neg root mean square"
+refir
+cv
+verbose = 4
+ 7. print gd.best_params)
+8.print gs.best_score)
+
+to see details - df = pd.dataframe(gs.cv_results)
+
